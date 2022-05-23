@@ -1,0 +1,13 @@
+.icon_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 1rem;
+  font-weight: 600;
+}
+.icon{
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}

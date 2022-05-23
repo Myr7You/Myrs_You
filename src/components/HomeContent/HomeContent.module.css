@@ -1,0 +1,270 @@
+.container h1,
+.container h3,
+.container p {
+  margin-top: 0;
+  color: rgb(255, 255, 255);
+  text-align: left;
+  line-height: normal;
+  margin-bottom: 0;
+  width: 75%;
+}
+.container p {
+  display: block;
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+.container h2 {
+  margin-top: 0;
+  color: rgb(218, 170, 13);
+  text-align: left;
+  line-height: normal;
+  margin-bottom: 0;
+  width: 75%;
+}
+
+.container{
+  height: calc(100vh - 60px);
+  background: url("/public/123.jpg") no-repeat center center fixed;
+  background-size: 120% auto;
+  background-position: 90% 10%;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+}
+.overlay {
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #4ac29a 5%, #000 20% 60%, #f2c94c 90%);
+  opacity: 0.5;
+  position: absolute;
+  right: 0%;
+  top: 0;
+  transform: skew(0deg);
+}
+.top_overlay {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(-20deg, #000, #16c0b0);
+  opacity: 0.7;
+  position: absolute;
+  left: 0%;
+  top: 0;
+}
+.skewDiv {
+  z-index: 100;
+  height: 75vh;
+  overflow: hidden;
+  transform: rotate(-5deg) skew(-5deg) translateY(8.5vh);
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.wrapper{
+  flex: 1;
+}
+.skewDiv_content {
+  z-index: 1000;
+  position: relative;
+  opacity: 0;
+  animation: textSlide 1s ease-out forwards 0.1s;
+  width: 100%;
+
+}
+.skew {
+  z-index: 100;
+  width: 55%;
+  height: 80vh;
+  position: absolute;
+  right: 100%;
+  animation: imageSlide 1s ease-out forwards 0.5s;
+}
+.imgDiv {
+  position: relative;
+  top: 50%;
+  z-index: 10;
+  width: 90%;
+  transform: skew(0) translateY(-57%);
+  /* transform: rotate(5deg) skew(5deg) translateY(8.5vh); */
+}
+
+ .picBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  .samllPic{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    z-index: 999;
+    border: 2px solid #fff;
+  }
+@keyframes drop {
+  0% {
+    opacity: 1;
+    bottom: 5%;
+  }
+  50% {
+    opacity: 0.5;
+    bottom: 6%;
+  }
+  100% {
+    opacity: 1;
+    bottom: 5%;
+  }
+}
+@keyframes imageSlide {
+  from {
+    right: 100%;
+  }
+
+  to {
+    right: -5%;
+  }
+}
+
+@keyframes textSlide {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .container{
+    height: calc(70vh - 60px);
+    background-position: 90% 23%;
+  }
+  .skewDiv {
+    height: calc(70vh - 60px);
+    transform: none;
+  }
+  .wrapper:nth-child(2){
+    display: none;
+  }
+  .skewDiv_content {
+    width: 100%;
+    left: 50%;
+    top: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translate(-40%, -52%);
+  }
+}
+@media screen and (min-width: 376px) and (max-width: 540px) {
+  .container {
+    height: calc(60vh - 60px);
+    background-position: 90% 10%;
+  }
+  .picBox{
+    padding-top: 50px;
+    padding-bottom: 0;
+  }
+  .samllPic{
+    width: 150px;
+    height: 150px;
+    
+  }
+  .wrapper:first-child{
+    width: 100%;
+  }
+  .skewDiv {
+    height: calc(60vh - 60px);
+    transform: none;
+  }
+  .skewDiv_content {
+    width: 100%;
+    left: 50%;
+    top: 30%;
+    transform: translate(-40%, -54%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 541px) and (max-width: 768px) {
+  .container{
+    height: calc(48vh - 60px);
+  }
+  .skewDiv {
+    height: 30vh;
+    transform: rotate(-5deg) skew(-5deg) translateY(4vh);
+  }
+  .skewDiv_content {
+    left: 50%;
+    top: 50%;
+    transform: skew(5deg) translateY(-50%) translateX(-35%);
+  }
+  .imgDiv {
+    top: 20%;
+    transform: skew(0) translateY(-57%);
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .container{
+    height: calc(52vh - 60px);
+  }
+  .skewDiv {
+    height: 35vh;
+    transform: rotate(-5deg) skew(-5deg) translateY(4.5vh);
+  }
+  .skewDiv_content {
+    left: 50%;
+    top: 50%;
+    transform: skew(5deg) translateY(-50%) translateX(-30%);
+  }
+  .skewDiv_content h1{
+    font-size: 2.4rem;
+  }
+  .skewDiv_content h2{
+    font-size: 2rem;
+  }
+  .imgDiv {
+    top: 25%;
+    transform: skew(0) translateY(-57%);
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1279px) {
+  .container {
+    height: calc(80vh - 60px);
+  }
+  .skewDiv {
+    height: 55vh;
+    transform: rotate(-5deg) skew(-5deg) translateY(6vh);
+  }
+  .skewDiv_content {
+    left: 50%;
+    top: 48%;
+    transform: skew(5deg) translateY(-50%) translateX(-38%);
+  }
+  .imgDiv {
+    top: 34%;
+    transform: skew(0) translateY(-50%);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container{
+    height: calc(100vh - 60px);
+  }
+  .skewDiv {
+    height: 75vh;
+    transform: rotate(-5deg) skew(-5deg) translateY(9vh);
+  }
+  .skewDiv_content {
+    left: 50%;
+    top: 50%;
+    transform: skew(5deg) translateY(-50%) translateX(-30%);
+  }
+  .imgDiv {
+    top: 50%;
+    transform: skew(0) translateY(-57%);
+  }
+}

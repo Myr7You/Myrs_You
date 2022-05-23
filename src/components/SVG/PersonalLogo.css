@@ -1,0 +1,105 @@
+#logo {
+  width: 8.5rem;
+  height: 40px;
+  padding: 12px 20px;
+  margin-left: 30px;
+  display: block;
+  animation: fill 1s ease-in forwards 2.5s;
+  z-index: 10000;
+  background-color: rgba(0, 0, 0, 1);
+  position: relative;
+  /* background: url("~@/assets/123.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: 20% auto;
+  background-position: -5% -40%; */
+}
+
+#logo path:nth-child(1) {
+  /* stroke-dasharray: 754;
+    stroke-dashoffset: 754; */
+  stroke-dasharray: 792;
+  stroke-dashoffset: 792;
+  animation: line-anim 1.5s ease forwards;
+}
+
+#logo path:nth-child(2) {
+  /* stroke-dasharray: 429;
+    stroke-dashoffset: 429; */
+  stroke-dasharray: 431;
+  stroke-dashoffset: 431;
+  animation: line-anim 1.5s ease forwards 0.3s;
+}
+
+#logo path:nth-child(3) {
+  /* stroke-dasharray: 246;
+    stroke-dashoffset: 246; */
+  stroke-dasharray: 279;
+  stroke-dashoffset: 279;
+  animation: line-anim 1.5s ease forwards 0.6s;
+}
+
+#logo path:nth-child(4) {
+  /* stroke-dasharray: 372;
+    stroke-dashoffset: 372; */
+  stroke-dasharray: 420;
+  stroke-dashoffset: 420;
+  animation: line-anim 1.5s ease forwards 0.9s;
+}
+
+#logo path:nth-child(5) {
+  /* stroke-dasharray: 433;
+    stroke-dashoffset: 433; */
+  stroke-dasharray: 364;
+  stroke-dashoffset: 364;
+  animation: line-anim 1.5s ease forwards 1.2s;
+}
+
+#logo path:nth-child(6) {
+  /* stroke-dasharray: 422;
+    stroke-dashoffset: 422; */
+  stroke-dasharray: 387;
+  stroke-dashoffset: 387;
+  animation: line-anim 2s ease forwards 1.5s;
+}
+
+@keyframes line-anim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fill {
+  from {
+    fill: transparent;
+  }
+
+  to {
+    fill: white;
+  }
+}
+@media (max-width: 768px) { 
+   #logo { 
+     margin-left: -10px;
+   }
+}
+@media (min-width: 769px) {
+  #logo {
+    -webkit-transition: background 0.5s ease-in;
+    -o-transition: background 0.5s ease-in;
+    -ms-transition: background 0.5s ease-in;
+    -moz-transition: background 0.5s ease-in;
+    transition: background 0.5s ease-in;
+    background-position: -2% 0;
+  }
+  #logo:hover {
+    /* background-color: rgba(0, 0, 0, 0.7); */
+    background: url("/public/123.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 20% auto;
+    background-position: -2% -8%;
+  }
+}
