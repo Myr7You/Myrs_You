@@ -91,6 +91,18 @@
   .container{
     background-size: 300% auto;
   }
+  .blogTitle{
+    text-align: center;
+    font-size: 36px;
+    margin: 22px 0;
+  }
+  .blogTitle span{
+    padding: 0px 20px;
+    line-height: 50px;
+  }
+  .blogBox{
+    padding: 15px;
+  }
 }
 
 @media screen and (min-width: 376px) and (max-width: 540px) {
@@ -103,5 +115,17 @@
   }
   .container{
     background-size: 400% auto;
+  }
+  .blogTitle{
+    text-align: center;
+    font-size: 36px;
+    margin: 22px 0;
+  }
+  .blogTitle span{
+    padding: 0px 20px;
+    line-height: 50px;
+  }
+  .blogBox{
+    padding: 15px;
   }
 }
