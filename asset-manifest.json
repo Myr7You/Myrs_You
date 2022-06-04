@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.57018d53.css",
-    "main.js": "/static/js/main.ec177571.js",
-    "static/media/123.jpg": "/static/media/123.d99d7bfad1b5abb5f6c2.jpg",
-    "static/media/Logo.svg": "/static/media/Logo.93a6e41915f63684fd63c1c1e422ac52.svg",
-    "static/media/skills.svg": "/static/media/skills.33c92e9c42e34be3872a08d38191535c.svg",
-    "index.html": "/index.html",
-    "main.57018d53.css.map": "/static/css/main.57018d53.css.map",
-    "main.ec177571.js.map": "/static/js/main.ec177571.js.map"
+    "main.css": "/Myrs_You/static/css/main.2110c750.css",
+    "main.js": "/Myrs_You/static/js/main.1f90c03a.js",
+    "static/media/123.jpg": "/Myrs_You/static/media/123.d99d7bfad1b5abb5f6c2.jpg",
+    "static/media/Logo.svg": "/Myrs_You/static/media/Logo.93a6e41915f63684fd63c1c1e422ac52.svg",
+    "static/media/skills.svg": "/Myrs_You/static/media/skills.33c92e9c42e34be3872a08d38191535c.svg",
+    "index.html": "/Myrs_You/index.html",
+    "main.2110c750.css.map": "/Myrs_You/static/css/main.2110c750.css.map",
+    "main.1f90c03a.js.map": "/Myrs_You/static/js/main.1f90c03a.js.map"
   },
   "entrypoints": [
-    "static/css/main.57018d53.css",
-    "static/js/main.ec177571.js"
+    "static/css/main.2110c750.css",
+    "static/js/main.1f90c03a.js"
   ]
 }
