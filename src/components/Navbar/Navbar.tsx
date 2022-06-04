@@ -31,7 +31,7 @@ const Navbar = () => {
         <PersonalLogo />
       </div>
       <div className={styles.right}>
-        {width < 765 && pathname === '/' && (
+        {width < 765 && pathname === '/Myrs_You' && (
           <div className={styles.langBox}>
             <button
               className={`${styles.lang_btn} ${lang && styles.actived}`}
@@ -63,7 +63,7 @@ const Navbar = () => {
                     ? `link ${styles.actived} ${styles.navLink} `
                     : `link ${styles.navLink}`
                 }
-                to="/"
+                to="/Myrs_you"
               >
                 {lang ? 'Home' : '首页'}
               </NavLink>
@@ -92,7 +92,7 @@ const Navbar = () => {
                 {lang ? 'About' : '关于'}
               </NavLink>
             </li>
-            {width > 765 && pathname === '/' && (
+            {width > 765 && pathname === '/Myrs_You' && (
               <li className={styles.navItem}>
                 <button
                   className={`${styles.lang_btn} ${lang && styles.actived}`}
