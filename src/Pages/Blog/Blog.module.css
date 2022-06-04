@@ -62,6 +62,33 @@
   align-self: flex-end;
 }
 
+
+@media screen and (max-width: 375px) {
+  .wrapper{
+    flex-direction: column;
+    padding: 20px;
+  }
+  .blogWrapper{
+    padding: 0;
+  }
+  .container{
+    background-size: 300% auto;
+  }
+}
+
+@media screen and (min-width: 376px) and (max-width: 540px) {
+  .wrapper{
+      flex-direction: column;
+      padding: 20px;
+  }
+  .blogWrapper{
+    padding: 0;
+  }
+  .container{
+    background-size: 400% auto;
+  }
+}
+
 @media screen and (min-width: 1280px) {
   .wrapper{
     width: 1280px;

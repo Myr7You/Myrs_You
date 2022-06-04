@@ -31,3 +31,15 @@
   margin-right: 10px;
   cursor: pointer;
 }
+
+@media screen and (max-width: 375px) {
+  .sideWrapper{
+    padding: 20px;
+  }
+}
+
+@media screen and (min-width: 376px) and (max-width: 540px) {
+  .sideWrapper{
+    padding: 20px;
+  }
+}
