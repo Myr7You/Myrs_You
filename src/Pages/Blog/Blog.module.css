@@ -1,6 +1,6 @@
 .container{
   height: calc(100vh - 60px);
-  background: url("https://images.pexels.com/photos/2117938/pexels-photo-2117938.jpeg?cs=srgb&dl=pexels-scott-webb-2117938.jpg&fm=jpg") no-repeat center center fixed;
+  background: url("https://res.cloudinary.com/dq8qhdgox/image/upload/v1653316851/common/pexels-scott-webb-2117938_hl5lzn.jpg") no-repeat center center fixed;
   background-size: 150% auto;
   position: relative;
   z-index: 0;
@@ -15,7 +15,6 @@
   justify-content: center;
 }
 
-
 .wrapper{
   display: flex;
   padding: 20px 50px;
@@ -24,7 +23,7 @@
 
 .blogWrapper{
   flex: 9;
-  padding: 20px;
+  padding: 0 20px;
   display: flex;
   flex-direction: column;
 }
@@ -41,12 +40,17 @@
   justify-content: space-between;
   min-height: 140px;
 }
+
+.blogBox:hover{
+  background: rgba(0, 0, 0, 0.7);
+}
+
 .blogTitle{
   font-size: 2.4rem;
   color: #fff;
 }
 .infoBox{
-  width: 15%;
+  width: 18%;
   display: flex;
   flex-direction: column;
   align-self: center;
@@ -55,20 +59,7 @@
   color: #fff;
   font-size: 1.2rem;
   font-weight: 500;
-}
-.category{
-  padding: 10px 20px;
-  margin-top: 20px;
-  background-color: teal;
-  color: #fff;
-  font-size: 1.3rem;
-  border-radius: 3px;
-  text-align: center;
-}
-
-.sideWrapper{
-  flex: 3;
-  padding: 20px;
+  align-self: flex-end;
 }
 
 @media screen and (min-width: 1280px) {

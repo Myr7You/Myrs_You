@@ -55,6 +55,29 @@ p {
   transition: color 0.6s ease;
 }
 
+pre {
+    background: #f1f0ea;
+    border: 1px solid #dddbcc;
+    border-radius: 3px;
+    font-size: 16px;
+    margin-bottom: 30px!important;
+}
+pre[class*=language-]{
+    padding: 1em;
+    margin: 0.5em 0;
+    overflow: auto;
+}
+code {
+    padding: 2px 4px;
+    font-size: 100%;
+    color: #444;
+    background-color: #f1f0ea;
+    border-radius: 4px;
+}
+code[class*=language-], pre[class*=language-] {
+    white-space: pre-wrap!important;
+        
+}
 @media (max-width: 768px) {
   html {
     font-size: 12px;

@@ -1,0 +1,44 @@
+.category{
+  padding: 10px 20px;
+  margin-top: 20px;
+  color: #fff;
+  font-size: 1.3rem;
+  border-radius: 3px;
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  width: fit-content;
+}
+
+.React{
+  color: #60dafb;
+  background-color: #282c34;
+}
+
+.JavaScript{
+  background-color: #fddc00;
+  color: #000000;
+}
+
+.HTML {
+  background-color: #ec6229;
+}
+
+.VUE{
+  color: #314b5b;
+  background-color: #40b882;
+}
+
+.CSS{
+  background-color: #007dc7;
+}
+
+.Next{
+  background-color: #000000;
+}
+
+.Express{
+  background-color: #b664a8;
+}

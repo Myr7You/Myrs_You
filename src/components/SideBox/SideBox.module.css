@@ -1,0 +1,33 @@
+.sideWrapper{
+  flex: 3;
+  padding: 30px 20px 50px;
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  height: fit-content;
+}
+
+.cateBoxTitle{
+  font-size: 1.6rem;
+  color: #fff;
+  border-bottom: 2px solid #fff;
+  border-right: 1px solid #fff;
+  font-weight: 500;
+}
+.cateList{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+.cateItem{
+  margin-right: 10px;
+  cursor: pointer;
+}

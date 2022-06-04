@@ -1,6 +1,6 @@
 import styles from "./Navbar.module.css"
 import PersonalLogo from "../SVG/PersonalLogo";
-import { NavLink } from "react-router-dom";
+import { NavLink,useLocation } from "react-router-dom";
 import { useAppSelector, useAppDispatch } from '../../app/hooks';
 import { switchLang } from "../../features/lang/langSlice";
 import { useState, useEffect } from "react";
@@ -11,7 +11,7 @@ const Navbar = () => {
   const dispatch = useAppDispatch();
   const [listOpen, setListOpen] = useState(true);
   const { width } = useWindowDimensions();
-  
+  const { pathname } = useLocation();
   useEffect(() => {
     if(width < 765){
       setListOpen(false)
@@ -31,7 +31,7 @@ const Navbar = () => {
         <PersonalLogo />
       </div>
       <div className={styles.right}>
-        {width < 765 && (
+        {width < 765 && pathname === '/' && (
           <div className={styles.langBox}>
             <button
               className={`${styles.lang_btn} ${lang && styles.actived}`}
@@ -77,7 +77,7 @@ const Navbar = () => {
                 }
                 to="/blog"
               >
-                {lang ? 'Home' : '博客'}
+                {lang ? 'Blog' : '博客'}
               </NavLink>
             </li>
             <li className={styles.navItem}>
@@ -89,10 +89,10 @@ const Navbar = () => {
                 }
                 to="/about"
               >
-                {lang ? 'Home' : '关于'}
+                {lang ? 'About' : '关于'}
               </NavLink>
             </li>
-            {width > 765 && (
+            {width > 765 && pathname === '/' && (
               <li className={styles.navItem}>
                 <button
                   className={`${styles.lang_btn} ${lang && styles.actived}`}
