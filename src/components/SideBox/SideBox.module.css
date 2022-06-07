@@ -23,7 +23,7 @@
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 0;
   padding: 0;
 }
@@ -35,11 +35,15 @@
 @media screen and (max-width: 375px) {
   .sideWrapper{
     padding: 20px;
+    flex: 0;
   }
 }
 
 @media screen and (min-width: 376px) and (max-width: 540px) {
   .sideWrapper{
+    flex: 0;
     padding: 20px;
+    margin-bottom: 30px;
+    margin-right:0px;
   }
 }

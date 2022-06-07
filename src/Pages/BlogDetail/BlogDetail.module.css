@@ -1,6 +1,6 @@
 .container{
   height: calc(100vh - 60px);
-  background: url("https://images.pexels.com/photos/998641/pexels-photo-998641.jpeg?cs=srgb&dl=pexels-francesco-ungaro-998641.jpg&fm=jpg") no-repeat center center fixed;
+  background: url("https://res.cloudinary.com/dq8qhdgox/image/upload/v1654494457/common/star-sky_t24gxy.jpg") no-repeat center center fixed;
   background-size: 150% auto;
   position: relative;
   z-index: 0;
@@ -26,6 +26,7 @@
   padding: 0 20px;
   display: flex;
   flex-direction: column;
+  margin-bottom: 30px;
 }
 .blogBox{
   color: #fff;
@@ -114,7 +115,7 @@
     padding: 0;
   }
   .container{
-    background-size: 400% auto;
+    background-size: 300% auto;
   }
   .blogTitle{
     text-align: center;

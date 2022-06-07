@@ -78,6 +78,18 @@ code[class*=language-], pre[class*=language-] {
     white-space: pre-wrap!important;
         
 }
+
+input[type="button"], input[type="submit"], input[type="reset"] {
+
+-webkit-appearance: none;
+
+}
+
+button {
+  -webkit-appearance: none;
+}
+
+textarea { -webkit-appearance: none;}
 @media (max-width: 768px) {
   html {
     font-size: 12px;

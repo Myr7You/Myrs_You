@@ -1,0 +1,147 @@
+.container{
+  height: calc(100vh - 60px);
+  background: url("https://res.cloudinary.com/dq8qhdgox/image/upload/v1654583159/common/pexels-steve-johnson-1269968_jqwgfj.jpg") no-repeat center center fixed;
+  background-size: 100% auto;
+  position: relative;
+  z-index: 0;
+  overflow: scroll;
+}
+.overlay{
+  width: 100%;
+  background: rgba(0, 0, 0, .5);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height:calc(100vh - 60px); 
+}
+.wrapper{
+  margin: 50px;
+  padding: 20px 50px;
+  height: fit-content;
+  background: rgba(0,0,0, .5);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.3);
+  border-radius: 30px;
+}
+.aboutWrapper{
+  display: flex;
+  flex-direction: column;
+}
+.aboutTitle{
+  color: #fff;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.aboutSubTitle{
+  color: #fff;
+  text-align: center;
+  display: block;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.aboutSubTitle:nth-child(3){
+  color:rgb(218, 170, 13);
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.aboutCtx{
+  color: #fff;
+  line-height: 60px;
+}
+
+.aboutCtx::first-letter{
+  margin-left: 20px; 
+}
+.aboutCtx:last-child{
+  margin-top: 160px;
+  margin-bottom: 50px;
+  font-weight: bold;
+  line-height: 30px;
+  text-align: center;
+}
+.aboutCtx:last-child::first-letter{
+  margin-left: 0px; 
+}
+.signed{
+  color:rgb(218, 170, 13);
+}
+
+.firstLine{
+  margin-top: 40px;
+}
+
+.firstLine::first-letter{
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.aboutLink{
+  color: teal;
+  text-decoration: none;
+}
+
+.aboutLink:hover{
+  color: rgb(218, 170, 13);
+}
+
+
+@media screen and (max-width: 375px) {
+  .wrapper{
+    flex-direction: column;
+    padding: 15px;
+  }
+  
+  .container{
+    background-size: 300% auto;
+  }
+  .aboutCtx{
+    line-height: 30px;
+  }
+  .aboutCtx:last-child{
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  .firstLine::first-letter{
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .aboutSubTitle:nth-child(3){
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (min-width: 376px) and (max-width: 540px) {
+  .wrapper{
+      flex-direction: column;
+      padding: 15px;
+  }
+  .container{
+    background-size: 400% auto;
+  }
+  .aboutCtx{
+    line-height: 30px;
+  }
+  .aboutCtx:last-child{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    line-height: 20px;
+  }
+  .firstLine::first-letter{
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .aboutSubTitle:nth-child(3){
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .wrapper{
+    width: 1280px;
+  }
+}

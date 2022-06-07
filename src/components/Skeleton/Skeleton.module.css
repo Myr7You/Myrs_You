@@ -1,0 +1,146 @@
+.blogSk{
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 7px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 30px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  min-height: 140px;
+  animation: skeleton 1s ease infinite alternate;
+}
+
+.blogDeSk{
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 7px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+}
+
+.blogTitle{
+  background-color: #ddd;
+  height: 50px;
+  border-radius: 5px;
+  margin: 20px;
+  /* animation: skeleton 1s ease infinite alternate; */
+}
+.blogSubTitle{
+  background-color: #ddd;
+  height: 30px;
+  border-radius: 5px;
+  width: 50%;
+  align-self: center;
+  margin: 20px;
+}
+.date2SK{
+  background-color: #ccc;
+  height: 25px;
+  border-radius: 5px;
+  width: 20%;
+  align-self: center;
+  margin-bottom: 60px;
+}
+.ctxSk{
+  background-color: #ddd;
+  height: 36px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.ctxSk:last-child{
+  width: 40%;
+}
+
+.loading{
+  background-color: #ccc;
+  border-radius: 3px;
+  width: 10%;
+  height: inherit;
+  animation: loading 1s ease-in-out infinite;
+}
+
+@keyframes skeleton {
+  to{
+    opacity: 0.5;
+  }
+}
+
+@keyframes loading {
+  0%{
+    width: 0%;
+  }
+  50%{
+    width: 100%;
+  }
+  100%{
+    width: 0%;
+  }
+}
+
+.blogSk:hover{
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.blogTitleBoxSk{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.blogTitleSk{
+  font-size: 2.4rem;
+  background-color: #ddd;
+  width: 90%;
+  height: 40px;
+  border-radius: 3px;
+  margin-top: 15px;
+}
+
+.blogTitleSk:last-child{
+  font-size: 2.4rem;
+  background-color: #ddd;
+  width: 60%;
+  height: 40px;
+  border-radius: 3px;
+}
+.infoBoxSk{
+  width: 18%;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+.dateSk{
+  background-color: #ccc;
+  align-self: flex-end;
+  width: 90%;
+  height: 30px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+.catesSk{
+  background-color: #ccc;
+  align-self: flex-end;
+  width: 60%;
+  height: 40px;
+  border-radius: 3px;
+}
+
+@media screen and (min-width: 376px) and (max-width: 540px) {
+  .blogDeSk{
+    padding: 15px 20px;
+  }
+
+  .catesSk{
+    width: 100%;
+  }
+}

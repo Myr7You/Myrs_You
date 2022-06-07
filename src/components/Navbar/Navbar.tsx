@@ -21,9 +21,7 @@ const Navbar = () => {
   }, [width])
   
   const handdleList = () => {
-    setListOpen(prev => (
-      prev = !prev
-    ))
+    if (width < 765) setListOpen(prev => (prev = !prev));
   };
   return (
     <div className={styles.navbar}>
@@ -31,21 +29,21 @@ const Navbar = () => {
         <PersonalLogo />
       </div>
       <div className={styles.right}>
-        {width < 765 && pathname === '/Myrs_You' && (
+        {width < 765 && pathname.indexOf('blog') !== 1 && (
           <div className={styles.langBox}>
-            <button
+            <span
               className={`${styles.lang_btn} ${lang && styles.actived}`}
               onClick={() => dispatch(switchLang(true))}
             >
               EN
-            </button>
+            </span>
             /
-            <button
+            <span
               className={`${styles.lang_btn} ${!lang && styles.actived}`}
               onClick={() => dispatch(switchLang(false))}
             >
               中
-            </button>
+            </span>
           </div>
         )}
         {width < 765 && (
@@ -63,7 +61,8 @@ const Navbar = () => {
                     ? `link ${styles.actived} ${styles.navLink} `
                     : `link ${styles.navLink}`
                 }
-                to="/Myrs_you"
+                to="/Myrs_You"
+                onClick={handdleList}
               >
                 {lang ? 'Home' : '首页'}
               </NavLink>
@@ -76,6 +75,7 @@ const Navbar = () => {
                     : `link ${styles.navLink}`
                 }
                 to="/blog"
+                onClick={handdleList}
               >
                 {lang ? 'Blog' : '博客'}
               </NavLink>
@@ -88,25 +88,26 @@ const Navbar = () => {
                     : `link ${styles.navLink}`
                 }
                 to="/about"
+                onClick={handdleList}
               >
                 {lang ? 'About' : '关于'}
               </NavLink>
             </li>
-            {width > 765 && pathname === '/Myrs_You' && (
+            {width > 765 && pathname.indexOf('blog') !== 1 && (
               <li className={styles.navItem}>
-                <button
+                <span
                   className={`${styles.lang_btn} ${lang && styles.actived}`}
                   onClick={() => dispatch(switchLang(true))}
                 >
                   EN
-                </button>
+                </span>
                 /
-                <button
+                <span
                   className={`${styles.lang_btn} ${!lang && styles.actived}`}
                   onClick={() => dispatch(switchLang(false))}
                 >
                   中
-                </button>
+                </span>
               </li>
             )}
           </ul>

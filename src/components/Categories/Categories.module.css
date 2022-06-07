@@ -42,3 +42,17 @@
 .Express{
   background-color: #b664a8;
 }
+
+@media screen and (max-width: 375px) {
+  .category{
+    padding: 10px 20px;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (min-width: 376px) and (max-width: 540px) {
+  .category{
+    padding: 10px 20px;
+    margin-top: 10px;
+  }
+}

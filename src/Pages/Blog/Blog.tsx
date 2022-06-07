@@ -5,6 +5,8 @@ import { useState, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import SideBox from '../../components/SideBox/SideBox';
+import useWindowDimensions from '../../hooks/useWindowDimensions.js';
+import Skeleton from '../../components/Skeleton/Skeleton';
 interface IState {
   blogType: {
     title: string;
@@ -15,11 +17,14 @@ interface IState {
     username: string;
     updatedAt: string;
   };
+  loading:boolean;
 }
 const Blog = () => {
   const { search } = useLocation();
   const navigate = useNavigate();
   const [blogs, setBlogs] = useState<IState['blogType'][]>([]);
+  const [loading, setLoading] = useState<IState['loading']>(true)
+  const { width } = useWindowDimensions();
   
   const handleCate = async (
     event: React.MouseEvent<HTMLDivElement, MouseEvent>,cateId:string
@@ -29,12 +34,14 @@ const Blog = () => {
   };
 
   useEffect(() => {
+    setLoading(true);
     const fetchPosts = async () => {
       const res = await axios.get(
         `${process.env.REACT_APP_API}/blogs${search}`
       );
       if (res.status === 200) {
         setBlogs(res.data);
+        setLoading(false);
       }
     };
     fetchPosts();
@@ -45,6 +52,8 @@ const Blog = () => {
       <div className={styles.overlay}>
         <div className={styles.wrapper}>
           <div className={styles.blogWrapper}>
+            {width < 765 && <SideBox onSBCate={handleCate} />}
+            {loading && <Skeleton type="blog" count={5} />}
             {blogs &&
               blogs.map(blog => (
                 <div className={styles.blogBox} key={blog._id}>
@@ -66,7 +75,7 @@ const Blog = () => {
                 </div>
               ))}
           </div>
-          <SideBox onSBCate={handleCate} />
+          {width > 765 && <SideBox onSBCate={handleCate} />}
         </div>
       </div>
     </div>
