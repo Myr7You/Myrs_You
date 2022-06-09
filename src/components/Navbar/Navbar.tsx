@@ -26,7 +26,9 @@ const Navbar = () => {
   return (
     <div className={styles.navbar}>
       <div className={styles.left}>
-        <PersonalLogo />
+        <NavLink to="/Myrs_You">
+          <PersonalLogo />
+        </NavLink>
       </div>
       <div className={styles.right}>
         {width < 765 && pathname.indexOf('blog') !== 1 && (
