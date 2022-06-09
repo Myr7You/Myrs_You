@@ -42,6 +42,10 @@
 .Express{
   background-color: #b664a8;
 }
+.All{
+  background-color: #fff;
+  color: #333;
+}
 
 @media screen and (max-width: 375px) {
   .category{

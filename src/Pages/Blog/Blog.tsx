@@ -29,8 +29,11 @@ const Blog = () => {
   const handleCate = async (
     event: React.MouseEvent<HTMLDivElement, MouseEvent>,cateId:string
   ) => {
-
-    navigate(`/blog?cat=${cateId}`);
+    if (cateId !== 'All') {
+      navigate(`/blog?cat=${cateId}`);
+    } else {
+      navigate(`/blog`);
+    }
   };
 
   useEffect(() => {

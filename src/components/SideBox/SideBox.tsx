@@ -56,6 +56,11 @@ const SideBox: React.FC<Props> = ({onSBCate}) => {
               Express.js
             </Categories>
           </li>
+          <li className={styles.cateItem}>
+            <Categories cate="All" onCate={handleSBCate}>
+              Show All
+            </Categories>
+          </li>
         </ul>
       </div>
     </div>

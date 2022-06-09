@@ -40,7 +40,12 @@ const BlogDetail = () => {
     cateId: string
   ) => {
     console.log(cateId);
-    navigate(`/blog?cat=${cateId}`);
+    if(cateId !== 'All'){
+      navigate(`/blog?cat=${cateId}`);
+    }else{
+      navigate(`/blog`);
+    }
+    
   };
 
   useEffect(() => {
