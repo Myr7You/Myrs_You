@@ -1,14 +1,15 @@
 .container{
   height: calc(100vh - 60px);
-  background: url("https://res.cloudinary.com/dq8qhdgox/image/upload/v1654583159/common/pexels-steve-johnson-1269968_jqwgfj.jpg") no-repeat center center fixed;
-  background-size: 100% auto;
+  /* background: url("https://res.cloudinary.com/dq8qhdgox/image/upload/v1654583159/common/pexels-steve-johnson-1269968_jqwgfj.jpg") no-repeat center center fixed; */
+  background: url("/public/123.jpg") no-repeat center center fixed;
+  background-size: 120% auto;
   position: relative;
   z-index: 0;
   overflow: scroll;
 }
 .overlay{
   width: 100%;
-  background: rgba(0, 0, 0, .5);
+  background: rgba(255, 255, 255, .1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   display: flex;
@@ -21,43 +22,51 @@
   margin: 50px;
   padding: 20px 50px;
   height: fit-content;
-  background: rgba(0,0,0, .5);
+  background: rgba(255,255,255, .6);
   backdrop-filter: blur(5px);
-  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.3);
-  border-radius: 30px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
 }
 .aboutWrapper{
   display: flex;
   flex-direction: column;
 }
 .aboutTitle{
-  color: #fff;
+  color: #111;
   text-align: center;
   margin-bottom: 10px;
 }
 .aboutSubTitle{
-  color: #fff;
+  color: #333;
   text-align: center;
   display: block;
   font-size: 1.3rem;
   font-weight: 500;
 }
 .aboutSubTitle:nth-child(3){
-  color:rgb(218, 170, 13);
+  color:teal;
   font-size: 1rem;
   margin-top: 10px;
+  font-weight: 500;
 }
 
 .aboutCtx{
-  color: #fff;
-  line-height: 60px;
+  color: #333;
+  line-height: 50px;
 }
 
 .aboutCtx::first-letter{
   margin-left: 20px; 
 }
-.aboutCtx:last-child{
-  margin-top: 160px;
+.aboutCtxCh{
+  margin-top: 150px;
+  margin-bottom: 50px;
+  font-weight: bold;
+  line-height: 30px;
+  text-align: center;
+}
+.aboutCtxEn{
+  margin-top: 100px;
   margin-bottom: 50px;
   font-weight: bold;
   line-height: 30px;
@@ -67,7 +76,7 @@
   margin-left: 0px; 
 }
 .signed{
-  color:rgb(218, 170, 13);
+  color:#000;
 }
 
 .firstLine{
@@ -81,6 +90,7 @@
 
 .aboutLink{
   color: teal;
+  font-weight: 500;
   text-decoration: none;
 }
 
@@ -101,10 +111,7 @@
   .aboutCtx{
     line-height: 30px;
   }
-  .aboutCtx:last-child{
-    margin-top: 50px;
-    margin-bottom: 20px;
-  }
+  
   .firstLine::first-letter{
     font-size: 20px;
     font-weight: 600;
@@ -119,17 +126,28 @@
   .wrapper{
       flex-direction: column;
       padding: 15px;
+      margin: 20px;
   }
   .container{
     background-size: 400% auto;
+    height: calc(100vh - 120px);
+  }
+  .overlay{
+    height: calc(100vh - 120px);
+  }
+  .firstLine{
+    margin-top: 20px;
   }
   .aboutCtx{
-    line-height: 30px;
+    line-height: 25px;
   }
-  .aboutCtx:last-child{
-    margin-top: 50px;
+  .aboutCtxCh{
+    margin-top: 30px;
     margin-bottom: 20px;
-    line-height: 20px;
+  }
+  .aboutCtxEn{
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
   .firstLine::first-letter{
     font-size: 20px;

@@ -39,7 +39,7 @@ const About = () => {
                 </a>{' '}
                 ，下载和了解代码。
               </p>
-              <p className={styles.aboutCtx}>
+              <p className={`${styles.aboutCtx} ${styles.aboutCtxCh}`}>
                 感谢您的浏览!
                 <br />
                 <span className={styles.signed}>Myrs You</span>
@@ -61,9 +61,9 @@ const About = () => {
                 by using <b>React + Redux + TypeScript</b> .Because of using{' '}
                 <b>TypeScript</b> ,the code has a better coding style and there
                 will be automatically warning in the IDE. Using{' '}
-                <b>React Hook api</b> to fulfill the pages functionality and applying{' '}
-                <b>Redux</b> to manage the states ，using React router to
-                accomplish the router and dispatch of dynamic router，and
+                <b>React Hook api</b> to fulfill the pages functionality and
+                applying <b>Redux</b> to manage the states ，using React router
+                to accomplish the router and dispatch of dynamic router，and
                 writing the module CSS by myself to make the{' '}
                 <b>responsive designed</b> webside.
               </p>
@@ -84,7 +84,7 @@ const About = () => {
                 </a>{' '}
                 ，to download and learn the code。
               </p>
-              <p className={styles.aboutCtx}>
+              <p className={`${styles.aboutCtx} ${styles.aboutCtxEn}`}>
                 Thank you for browsing !
                 <br />
                 <span className={styles.signed}>Myrs You</span>
