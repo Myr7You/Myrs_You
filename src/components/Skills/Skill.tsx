@@ -34,7 +34,7 @@ const Skill: React.FC<Props> = ({lang}) => {
         iconW: 130,
         title: 'Multi-Coding-Skill',
         content:
-          'Experience with HTML5, CSS3, SCSS, Bootstrap,Javascript(ES6 and beyond), Git. Good at VUE(Vue Cli, Vue Router, Vuex, Nuxt.js).<br /> Know about React.js, SQL, Ruby, Rails, Node.js and willing to learn more.'
+          'Experience with HTML5, CSS3, SCSS, Bootstrap,Javascript(ES6 and beyond), Git. Good at VUE(Vue Cli, Vue Router, Vuex, Nuxt.js) and React(Redux、React router).<br /> Know about Next.js、 Node.js、Express.js and willing to learn more.'
       },
       {
         icon: 'lang',
@@ -74,7 +74,7 @@ const Skill: React.FC<Props> = ({lang}) => {
         iconW: 130,
         title: '多种编程技能',
         content:
-          '熟练使用HTML5，CSS3，SCSS，Bootstrap，Javascript（ES6及更高版本），Git等。会VUE全家桶使用（该个人网页就是使用VUE搭建的）<br /> 还有了解不继续学习React.js,Node.js,SQL,Ruby on Rails等技术'
+          '熟练使用HTML5、CSS3、SCSS、Bootstrap、Javascript(ES6及更高版本),Git等。会VUE全家桶使用、React(该网页就是使用React + Redux + TypeScript搭建的)<br /> 还有了解不断继续学习,Next.js、 Node.js、Express.js等技术'
       },
       {
         icon: 'lang',
